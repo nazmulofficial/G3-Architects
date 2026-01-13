@@ -190,13 +190,31 @@ main{
 }
  /* responsive media query */
 
+ #Experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+ }
+
+ #Experience-years{
+  font-size: 4rem;
+  font-weight: 700;
+ }   
 
  @media screen and (max-width:576px){
-  .navbar, .nav-links, .teams{
+  .navbar, 
+  .nav-links, 
+  .teams, 
+  .features{
     flex-direction: column;
   }
   .team-img-container, .facts-container, .sopsors-company{
     grid-template-columns: 1fr;
+  }
+  .feature-arc img{
+    width: 100%;
   }
 
   .facts-container{
@@ -205,6 +223,12 @@ main{
   .our-features{
     margin-left: 20px;
   }
+ #Experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+  }
+
  }
 
  /* medium size device */
@@ -219,5 +243,10 @@ main{
     grid-template-columns: repeat(2,1fr);
     gap:50px;
     justify-items: center;
+  }
+  #Experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
   }
  }
